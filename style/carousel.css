@@ -38,19 +38,16 @@ body {
   height: 22rem;
 }
 
-.parsl-banner {
+.funcx-banner {
   color: white;
-  background-color: #01192D;
+  background-color: #000000;
   margin-bottom: 80px;
 }
-.parsl-banner-img {
+.funcx-banner-img {
   max-width: 70%;
 }
 
-.parslfest-banner {
-  color: white;
-  background-color: #85b1dd;
-}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
