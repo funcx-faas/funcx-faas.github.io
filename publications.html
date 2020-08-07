@@ -89,7 +89,7 @@ $( document ).ready(function() {
        $("#paper-div").append(paper)
    }
 
-   $.get( "publications/ParslPubs.bib", function( data ) {
+   $.get( "publications/FuncXPubs.bib", function( data ) {
        var parser = BibtexParser(display_bib);
        parser.parse(data);
    });
