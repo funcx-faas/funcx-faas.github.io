@@ -1,5 +1,10 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+
+.pubs-divider {
+    margin: 1rem 0;
+}
+
 /* Padding below the footer and lighter body text */
 
 body {
