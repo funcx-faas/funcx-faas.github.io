@@ -18,6 +18,9 @@ description: > # this means to ignore newlines until "baseurl:"
   funcX offers distributed and federated function as a service. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://funcx.github.io" # the base hostname & protocol for your site
+collections: 
+  people:
+    output: false
 plugins:
   - jekyll-redirect-from
 # Build settings
