@@ -1,6 +1,6 @@
 ---
 title: "Kyle Chard"
 image: "chard-kyle.jpg"
-institution: "Argonne National Laboratory"
+institution: "University of Chicago"
 ranking: 3
 ---
