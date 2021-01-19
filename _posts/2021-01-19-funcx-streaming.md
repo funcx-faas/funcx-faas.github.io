@@ -78,7 +78,8 @@ The function goes into a loop that start with a receive-message on its input que
 5 seconds.  If a message arrives in that interval it is either “quit” or “take picture”.   If it is “quit” it send a signal back to the
 client program signaling it to quit and it then return from the FuncX invocation.   
 
-The source code for both solutions is in the dbgannon/pars-funcx github repository as funcx-interactive-camera-final.ipynb (and html).
+The source code for both solutions is in the [dbgannon/pars-funcx github repository](https://github.com/dbgannon/parsl-funcx) as
+funcx-interactive-camera-final.ipynb (and html).
 The desktop client program are also there.   You need to supply an AWS account information to run the aws example.  To run the rabbitmq
 version you need to have an instance of rabbitmq running.  It doesn’t cost you anything to download and run it, but it is not a fun
 installation.  
