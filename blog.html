@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+---
+<div class="container support" style="margin-top: 10px;">
+  
+  <div class="row" style="padding-top: 20px">
+    <div class="col-lg-12">
+      <h2>Blog</h2>
+			
+			<div>
+				{% for post in site.posts %}
+					<div>
+						<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+						<div><b>{{ post.author }}</b></div> 
+						<div><b>{{ post.date | date: "%-d %B %Y" }}</b></div>
+						{{ post.content | strip_html | truncatewords:75 }}
+					</div>
+				{% endfor %}
+			</div>
+			
+		</div>
+	</div>
+</div>

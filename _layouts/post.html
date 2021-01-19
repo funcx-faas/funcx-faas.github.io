@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="container support" style="margin-top: 10px;">
+  
+  <div class="row" style="padding-top: 20px">
+    <div class="col-lg-12">
+      <h2>{{ page.title }}</h2>
+			<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+
+			{{ content }}
+		</div>
+  </div>
+</div>
