@@ -21,8 +21,8 @@ url: "http://funcx.github.io" # the base hostname & protocol for your site
 collections: 
   people:
     output: false
-	blog: 
-	  output: true
+  blog: 
+    output: true
 plugins:
   - jekyll-redirect-from
 # Build settings
