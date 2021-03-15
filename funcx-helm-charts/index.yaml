@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  funcx_endpoint:
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-09-04T14:39:13.949189-05:00"
+    description: Deploy a funcX endpoint into a cluster
+    digest: 8b12543ce85f7929762636f7d8a600a1900794bcf850e34fa2ffa04c1f4ed959
+    name: funcx_endpoint
+    type: application
+    urls:
+    - http://funcx.org/funcx-helm-charts/funcx_endpoint-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-09-04T14:39:13.947373-05:00"
