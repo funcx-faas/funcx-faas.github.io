@@ -28,5 +28,3 @@ plugins:
 # Build settings
 #markdown: kramdown
 #theme: minima
-keep_files:
-  - funcx-helm-charts
