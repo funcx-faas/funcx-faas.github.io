@@ -1,11 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
-.funcxfest-banner {
-  color: white;
-  background-color: #85b1dd;
-}
-
 /************************
   People
 ************************/
@@ -80,11 +75,20 @@ body {
 .funcx-banner {
   color: white;
   background-color: #072249;
-  margin-bottom: 80px;
+  /* set margin to 0 for funcXfest banner */
+  margin-bottom: 0px;
+  /*margin-bottom: 80px;*/
 }
 .funcx-banner-img {
   max-width: 70%;
 }
+
+
+.funcxfest-banner {
+  color: white;
+  background-color: #85b1dd;
+}
+
 
 
 /* MARKETING CONTENT
