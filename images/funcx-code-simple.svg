@@ -1,49 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 168 115" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" viewBox="0 0 600 306.5" xmlns="http://www.w3.org/2000/svg">
 <style>
-rect{width:100%;fill-rule:evenodd;stroke-width:0.3pt}
-.cell{font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0;fill:#000000;font-family:'Ubuntu Mono';font-size:4pt}
+*{margin:0;padding:0;stroke:none:line-height:0}
+rect{width:100%;fill-rule:evenodd;stroke-width:1pt}
+.cell{font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1;fill:#000000;font-family:'Ubuntu Mono';font-size:13pt}
 .input{fill:#f5f8f4;stroke:#ced0cc}
 .output{fill:#fff;stroke:#fff}
 .cell text{white-space:pre}
-.hash-comment{fill:#007b7a}
-.keyword{fill:#008100;font-weight:bold}
+.hash-comment{fill:#007b7a;font-style:italic}
 .method-name{fill:#3200f9}
 .operator{fill:#ae1afe}
+.string{fill:#c02321}
 .built-in{fill:#008100}
 .number{fill:#008100}
-.string{fill:#c02321}
+.keyword{fill:#008100;font-weight:bold}
 @media (prefers-color-scheme: dark) {
     .cell{fill:#e8e6e3}
     .input{fill:#1f2223;stroke:#3e4345}
     .output{fill:#181a1b;stroke:#181a1b}
     .hash-comment{fill:#77ffff}
-    .keyword{fill:#72ff72}
     .method-name{fill:#337cff}
     .operator{fill:#b031ff}
-    .built-in{fill:#72ff72}
-    .number{fill:#6dff6d}
     .string{fill:#e05151}
+    .built-in{fill:#72ff72}
+    .number{fill:#72ff72}
+    .keyword{fill:#72ff72}
 }
 </style>
-  <g class="cell">
-    <rect x="0" y="0" height="34ex" class="output"/>
-    <rect x="0" y="0" height="31ex" class="input"/>
-    <text>
-        <tspan x="0.5ex" y="2ex" class="keyword">from</tspan> funcx <tspan class="keyword">import</tspan> <tspan>FuncXExecutor</tspan>
-        <tspan x="0.5ex" dy="4ex" class="hash-comment"># function to execute remotely (on node, cluster, laptop, ...)</tspan>
-        <tspan x="0.5ex" dy="2ex" class="keyword">def</tspan> <tspan class="method-name">square_them</tspan><tspan>(nums):</tspan>
-        <tspan x="4ex" dy="2ex" class="keyword">return</tspan> [n <tspan class="operator">*</tspan> n <tspan class="keyword">for</tspan> n <tspan class="keyword">in</tspan> <tspan>nums]</tspan>
-        <tspan x="0.5ex" dy="4ex">x_vals</tspan> <tspan class="operator">=</tspan> [x <tspan class="keyword">for</tspan> x <tspan class="keyword">in</tspan> <tspan class="built-in">range</tspan>(<tspan class="operator">-</tspan><tspan class="number">4</tspan>, <tspan class="number">5</tspan>)]  <tspan class="hash-comment"># data for function</tspan>
-        <tspan x="0.5ex" dy="4ex" class="hash-comment"># Public tutorial endpoint (*which* remote resource to use)</tspan>
-        <tspan x="0.5ex" dy="2ex">ep_id</tspan> <tspan class="operator">=</tspan> <tspan class="string">'4b116d3c-1703-4f8f-9f6f-39921e5864df'</tspan>
-        <tspan x="0.5ex" dy="2ex" class="keyword">with</tspan> FuncXExecutor(endpoint_id<tspan class="operator">=</tspan>ep_id) <tspan class="keyword">as</tspan> <tspan>fxe:</tspan>
-        <tspan x="4ex" dy="2ex">y_fut</tspan> <tspan class="operator">=</tspan> <tspan>fxe.submit(square_them, x_vals)</tspan>
-        <tspan x="4ex" dy="2ex">y_vals</tspan> <tspan class="operator">=</tspan> y_fut.result()  <tspan class="hash-comment"># wait for result</tspan>
-        <tspan x="0.5ex" dy="4ex" class="built-in">print</tspan><tspan>(y_vals)</tspan>
-    </text>
-    <text y="31ex">
-        <tspan x="0.5ex" dy="2ex">(16, 9, 4, 1, 0, 1, 4, 9, 16)</tspan>
-    </text>
-  </g>
-</svg>
+<g class="cell">
+<rect x="0" y="0" height="34ex" class="output"/><rect x="0" y="0" height="31ex" class="input"/>
+<text><tspan x="0.5ex" y="3ex" class="keyword">from</tspan> funcx <tspan class="keyword">import</tspan> <tspan>FuncXExecutor</tspan>
+<tspan x="0.5ex" dy="2ex" class="hash-comment"># function to execute remotely (on node, cluster, laptop, ...)</tspan>
+<tspan x="0.5ex" class="keyword">def</tspan> <tspan class="method-name">square_them</tspan><tspan>(nums):</tspan>
+<tspan x="4ex" class="keyword">return</tspan> [n <tspan class="operator">*</tspan> n <tspan class="keyword">for</tspan> n <tspan class="keyword">in</tspan> <tspan>nums]</tspan>
+<tspan x="0.5ex" dy="2ex">x_vals</tspan> <tspan class="operator">=</tspan> [x <tspan class="keyword">for</tspan> x <tspan class="keyword">in</tspan> <tspan class="built-in">range</tspan>(<tspan class="operator">-</tspan><tspan class="number">4</tspan>, <tspan class="number">5</tspan>)]  <tspan class="hash-comment"># data for function</tspan>
+<tspan x="0.5ex" dy="2ex" class="hash-comment"># Public tutorial endpoint (*which* remote resource to use)</tspan>
+<tspan x="0.5ex">ep_id</tspan> <tspan class="operator">=</tspan> <tspan class="string">'4b116d3c-1703-4f8f-9f6f-39921e5864df'</tspan>
+<tspan x="0.5ex" class="keyword">with</tspan> FuncXExecutor(endpoint_id<tspan class="operator">=</tspan>ep_id) <tspan class="keyword">as</tspan> <tspan>fxe:</tspan>
+<tspan x="4ex">y_fut</tspan> <tspan class="operator">=</tspan> <tspan>fxe.submit(square_them, x_vals)</tspan>
+<tspan x="4ex">y_vals</tspan> <tspan class="operator">=</tspan> y_fut.result()  <tspan class="hash-comment"># wait for result</tspan>
+<tspan x="0.5ex" dy="2ex" class="built-in">print</tspan><tspan>(y_vals)</tspan></text>
+<text y="31ex"><tspan x="0.4ex" dy="2ex">(16, 9, 4, 1, 0, 1, 4, 9, 16)</tspan></text></g></svg>
