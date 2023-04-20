@@ -1,0 +1,84 @@
+---
+layout: default
+title: Globus Compute
+---
+
+<style>
+.cs-image {
+  width: 75%;
+}
+</style>
+
+<div class="container support" style="margin-top: 10px;">
+  
+  <div class="row" style="padding-top: 20px">
+    <div class="col-lg-12">
+      <h2>funcXFest - The funcX Community Meeting</h2>
+      <p>On April 19, funcX will be added to the Globus platform. As part of this transition, 
+        the service name will change to <a href='https://globus.org/compute'>Globus Compute</a>. This will 
+        provide access to new features via the Globus web interface: initially, viewing and managing 
+        your endpoints, and in coming months, registering and managing functions as well as running and monitoring tasks.</p>
+
+    <p>Over the last four years, the funcX project has been supported by a collaborative NSF CSSI award (2004894 & 2004932). 
+      During this time, we have worked to move from a research prototype to a production platform service, and are now ready 
+      to take the next step on this path. Globus Compute is developed and operated by the Globus team and leverages the same 
+      scalable, secure, and robust methods and practices for development and operations as other Globus services.  
+      It too will build upon the established sustainability model that funds ongoing Globus development and operations. </p>
+
+    <p>Globus Compute packages are now available on PyPI and we will continue to release backwards compatible funcX packages 
+      that wrap the underlying Globus Compute packages until September 1, 2023. We encourage users to migrate to the Globus 
+      Compute packages as soon as possible to gain access to the latest features. Migration requires only downloading the 
+      new packages (globus-compute and globus-compute-endpoint) and changing the commands used to start/stop your endpoints 
+      or minor changes to your client code (e.g., modifying import statements).  
+      Please refer to the documentation for more details: 
+      <a href='https://globus-compute.readthedocs.io/en/latest/funcx_upgrade.html'>https://globus-compute.readthedocs.io/en/latest/funcx_upgrade.html</a>.
+
+      </p>
+    </div>
+   </div>
+        
+  
+   <div class="row" style="padding-top: 20px">
+      <div class="col-lg-12">
+      <h3>FAQ</h3>
+        <p><b>Why the transition?<b> Integration into the Globus platform allows us to provide a more capable and robust distributed 
+          computation service, and one that leverages the Globus team’s expertise in building and operating production-grade services. 
+          This also ensures that Globus Compute benefits from the established sustainability model that funds ongoing Globus operations and development.</p>
+        <p><b>Why the new name? We love the name funcX, so the change wasn’t easy. But we want to make it clear that Globus Compute integrates seamlessly with other Globus services (e.g., Transfer, Sharing, Flows, Auth), and that the Globus team is committed to supporting the service into the future.
+</b></p>
+        <p><b>From a user’s perspective, what will change?</b> Short answer: nothing but the name. While the 
+          SDK and endpoint package names will change, the compute model and interfaces will remain the same. 
+          We will continue to improve the platform and to expand the features offered in the web interface.</p>
+          
+        <p><b>Will there be a subscription? We use the same freemium model as other Globus services. All current
+          functionality and many future user functionality will remain free to researchers. We plan to add features 
+          over the coming years that will provide enhanced capabilities; some of these will be available only to Gobus subscribers. 
+</b></p>
+        <p><b>Can I keep using the funcX SDK and endpoint packages?</b> We will continue to support 
+          funcX packages for six months, but encourage users to migrate as soon as possible.</p>
+          
+        <p><b>When will funcX SDK and endpoints no longer be supported?</b> September 1, 2023.</p>
+          
+        <p><b>What about docs, support, website, and Slack?</b> Documentation is now available at:  
+          <a href='https://globus-compute.readthedocs.io/'>https://globus-compute.readthedocs.io/</a>. We will be moving to standard Globus support channels; 
+          please email <a href='mailto:support@globus.org'>support@globus.org</a> with any questions. We will soon redirect the funcX website to the Globus 
+          website. We have found Slack to be an effective way of communicating with the community. We intend to continue 
+          to use the funcX (funcx.slack.org) Slack channel.</p>
+          
+          <p><b>What will happen to my existing endpoints?</b> After updating your Globus Compute Python endpoint package, 
+            all of your existing endpoints will remain accessible. </p>
+          
+          <p><b>How do I update my client code?</b> After installing the new Globus Compute SDK package you will need to 
+            change the import statements and instantiation of the Globus Compute client/executor. The general interfaces 
+            will remain the same. Please see 
+            <a href='https://globus-compute.readthedocs.io/en/latest/funcx_upgrade.html'>https://globus-compute.readthedocs.io/en/latest/funcx_upgrade.html</a> 
+            for further details.</p>
+          
+          <p><b>How do I access the new Globus Compute web interface?</b><a href='https://app.globus.org/compute'>https://app.globus.org/compute</a></p>
+     
+     
+     </div>
+  </div>
+   
+  
+</div>
