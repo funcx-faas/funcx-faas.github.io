@@ -155,14 +155,14 @@ The fact that this is all managed through a cloud-based web service is very impr
 
 ## FuncX on Nvidia Jetson Nano
 
-The Nvidia Jetson Nano is a tiny, but powerful computer for embedded applications and AI. It has a
-Quad-core ARM Cortex-A57 MPCore processor, 128 NVIDIA CUDA® cores and 4 GB memory.  Installing a FuncX end point on the
-Nano is easy.  Just follow the [steps](https://funcx.readthedocs.io/en/latest/endpoints.html) in the docs.  At the end of
-the installation, you will have the endpoint uuid. An important application of FuncX is to use it to probe an edge device
-and read instruments or use special features that the device provides.  Because the Nano has an Nvidia GPU (and my laptop
-doesn’t) why not ship computation to the nano?  Here is a trivial example.   KMeans clustering is a standard ML algorithm
-that clusters points in space into a given number of nearby sets.  KMeans also involves lots of vector operations so it is
-suitable for execution in a GPU.  We have a program kmeans.py that contains four functions:
+The Nvidia Jetson Nano is a tiny, but powerful computer for embedded applications and AI. It has a Quad-core ARM Cortex-A57
+MPCore processor, 128 NVIDIA CUDA® cores and 4 GB memory.  Installing a FuncX end point on the Nano is easy.  Just follow
+the [steps](https://globus-compute.readthedocs.org/en/latest/endpoints.html) in the docs. At the end of the installation,
+you will have the endpoint uuid. An important application of FuncX is to use it to probe an edge device and read instruments
+or use special features that the device provides.  Because the Nano has an Nvidia GPU (and my laptop doesn’t) why not ship
+computation to the nano?  Here is a trivial example.   KMeans clustering is a standard ML algorithm that clusters points in
+space into a given number of nearby sets.  KMeans also involves lots of vector operations so it is suitable for execution in
+a GPU.  We have a program kmeans.py that contains four functions:
 
 *	random_init  which initializes a random partition of the points in set by giving each point a code.
 *	update_centers calculates the “center of gravity” of each set of points.
