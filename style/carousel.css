@@ -84,9 +84,14 @@ body {
 }
 
 
-.funcxfest-banner {
+.funcx-globus-banner {
   color: white;
   background-color: #85b1dd;
+}
+.funcx-globus-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
 }
 
 
